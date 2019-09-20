@@ -3,7 +3,9 @@ def reverse_each_word(string)
   reverse_string = []
   string_array.each do |word|
     each_letter = word.split('')
-    reverse_string.unshift(each_letter.pop)
+    reverse_string.each do |letter|
+      letter.unshift(each_letter.pop)
+    end
   end
   reverse_string
 end
