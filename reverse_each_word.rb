@@ -6,7 +6,6 @@ def reverse_each_word(string)
     reverse_string.each do |letter|
       letter.unshift(each_letter.pop)
     end
-    reverse_string.push
   end
   reverse_string
 end
